@@ -31,7 +31,7 @@ class Pet extends React.Component {
         </div>
         <div className="extra content">
 
-          
+
         </div>
       </div>
     )
