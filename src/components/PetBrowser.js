@@ -14,7 +14,7 @@ class PetBrowser extends React.Component {
             return <Pet pet={pet} index={index} onAdoptPet={this.props.onAdoptPet}/>
           })
         }
-      </div
+      </div>
     )
   }
 }
