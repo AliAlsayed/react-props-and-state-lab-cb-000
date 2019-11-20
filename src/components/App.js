@@ -40,8 +40,10 @@ class App extends React.Component {
 
   handleAdoption = (id) => {
     const pets = this.state.pets.map(p => {
-      p.id === id ? {...p, isAdopted: true} : p
-    })
+      p.id === id ? {...p, isAdopted: true} : p;
+    });
+
+    this.setState({pets: pets});
   }
 
   render() {
