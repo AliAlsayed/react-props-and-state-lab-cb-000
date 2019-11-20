@@ -6,6 +6,11 @@ class Pet extends React.Component {
   }
 
   render() {
+    let button;
+
+    if (this.props.pet.isAdopted){
+      button = <button className="ui disabled button">Already adopted</button>
+    }
     return (
       <div className="card">
         <div className="content">
@@ -22,7 +27,7 @@ class Pet extends React.Component {
           </div>
         </div>
         <div className="extra content">
-          <button className="ui disabled button">Already adopted</button>
+          
           <button className="ui primary button"
           onClick={this.props.onAdoptPet}>Adopt pet</button>
         </div>
